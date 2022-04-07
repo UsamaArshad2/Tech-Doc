@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="style.css">
+
+<main id="main-doc">
+  <section class="main-section" id="introduction"> 
+  <header>
+    <h1>Introduction</h1>
+    </header>
+    <p>Today we will be discussing how to use CSS' background color blend mode to bring your webpage backgrounds to a new level. CSS background blend mode allows us to blend a background image and a background color element.</p>
+      <p> For example: 
+        <li>Typing this:
+          <code> main{background-color:blue;}</code>
+          
+        will make the background color blue.</li> </p>
+<br>        
+<li>Typing this: <code> main{background-image:url("image-url")}</code> will set the background to whatever image you choose. </li>
+    </p>
+    <p>Notice that if you add both to your stylesheet, you will see the background image, but not the background color, because the image will be above the color. What CSS blend mode does, is blend the two. </p>
+    <p> To use background blend mode, type this in your CSS: <br><br> <code>main{ background-blend-mode:(value);} </code><br> <br>So what goes into the (value) space? in the following sections I will show you the different values you can place there and the effect they will create on this image.
+      </p>
+    <img id="normal" src="rivendell.jpg">  
+    
+  </section>
+  <section class="main-section" id="unnamed_sec_2">
+    <header>
+      <h1>Lighten Mode</h1>
+    </header>
+  
+      <p> Typing this: <code> main{ background-blend-mode:lighten;}}</code>
+      will make the background image look like this.
+    </p>
+    <img id="lighten" src="divdell.png">
+    <br>
+    <br>
+    <li> The effect seen in this image was created by blending <code>background-image:url("rivendell.jpg")</code> </li>
+    <br>
+    <li>With this: <code>background-color:#545aa7</code> and then applying <code>background-blend-mode:lighten</code></li>
+  </section>
+  <section class="main-section" id="unnamed_sec_3"> 
+    <header>
+      <h1>Darken Mode</h1>
+    </header>
+    
+      <p> Typing this: <code> main{ background-blend-mode:darken;}</code>
+      will blend the background image and color to look like this.
+    </p>
+    <img src="darken.png" id="darken">
+    
+    <li>This effect uses the same image and background color as previous examples, though utilizing the darken mode changes the look completely! </li>
+   </section>
+  <section class="main-section" id="unnamed_sec_4"> 
+    <header>
+      <h1>Hard Light Mode</h1>
+    </header>
+    
+      <p> Typing this: <code> main{ background-blend-mode:hard-light;}</code>
+      will apply the hard light effect to the background image and color, the resulting background looks like this.
+    </p>
+    <img src="hardlight.png" id="hardlight">
+    <br>
+    <br>
+    <li>In my personal opinion, the hard light effect is the best looking effect for this background image and color combination.  </li>
+    </section>
+  <section class="main-section" id="unnamed_sec_5"> 
+    <header>
+      <h1>Multiply Mode</h1>
+    </header>
+    <p> Typing this: <code> main{ background-blend-mode:multiply;}</code>
+      will apply this effect to the background.
+    </p>
+    <img src="multiply.png">
+    <br>
+    <br>
+    <li> This is a close second in terms of the different effects for these combinations, this one would be especially good for making text on the webpage visible and readable. With the background image this dark, a light colored font would look great. </li>
+    </section>
+  <nav id="navbar"> 
+  <header>
+    <h2>Background Blend Mode </h2>
+    <hr>
+    </header>
+    <a class="nav-link" href="#introduction" style="text-decoration:none"> Introduction </a>
+    <hr>
+    <br>
+    <a class="nav-link" href="#unnamed_sec_2" style="text-decoration:none"> Lighten Mode </a>
+    <hr>
+    <br>
+    <a class="nav-link" href="#unnamed_sec_3" style="text-decoration:none"> Darken Mode </a>
+    <hr>
+    <br>
+    <a class="nav-link" href="#unnamed_sec_4" style="text-decoration:none"> Hard Light Mode </a>
+    <hr>
+    <br>
+    <a class="nav-link" href="#unnamed_sec_5" style="text-decoration:none"> Multiply</a>
+    <hr>
+    <br>
+  </nav>
+</main>
